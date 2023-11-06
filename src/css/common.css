@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+  padding: 20px;
+}
+
+.breed-select {
+  padding: 4px;
+  margin-bottom: 20px;
+}
+img {
+  display: block;
+  max-width: 400px;
+}
+.cat-info {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.text-box {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleName {
+  margin: 0;
+}
+.is-hidden {
+  display: none;
+}
+p {
+  margin-top: 0;
+}
+.centre {
+  display: flex;
+  justify-content: center;
+}
+.loader {
+  text-align: center;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #4279be;
+  position: relative;
+}
+.loader::before {
+  content: '';  
+  position: absolute;
+  left: 34px;
+  bottom: 17px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 5px solid #FFF;
+  border-bottom-color: #faec23;
+  box-sizing: border-box;
+  animation: rotation 0.6s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
